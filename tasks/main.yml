@@ -1,0 +1,33 @@
+---
+
+- name: Enable password authentication
+  lineinfile:
+    dest: "/etc/ssh/sshd_config"
+    regexp: "^PasswordAuthentication"
+    line: "PasswordAuthentication yes"
+  when: sshd_password_authentication
+  notify: restart ssh
+
+- name: Disable password authentication
+  lineinfile:
+    dest: "/etc/ssh/sshd_config"
+    regexp: "^PasswordAuthentication"
+    line: "PasswordAuthentication no"
+  when: not sshd_password_authentication
+  notify: restart ssh
+
+- name: Enable root login
+  lineinfile:
+    dest: "/etc/ssh/sshd_config"
+    regexp: "^PermitRootLogin"
+    line: "PermitRootLogin yes"
+  when: sshd_permit_root_login
+  notify: restart ssh
+
+- name: Disable root login
+  lineinfile:
+    dest: "/etc/ssh/sshd_config"
+    regexp: "^PermitRootLogin"
+    line: "PermitRootLogin no"
+  when: not sshd_permit_root_login
+  notify: restart ssh
