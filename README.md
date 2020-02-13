@@ -26,5 +26,3 @@ This role is open-sourced software licensed under the [MIT license](http://opens
 ## Author
 
 By [Mark Hesketh](https://www.markhesketh.co.uk/), a web developer from Manchester, UK.
-
-[Web](https://www.markhesketh.co.uk/) | [Twitter](https://www.twitter.com/markahesketh/) | [Github](http://www.github.com/heskethm/)
