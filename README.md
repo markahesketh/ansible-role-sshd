@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/markahesketh/ansible-role-sshd.svg?branch=master)](https://travis-ci.org/markahesketh/ansible-role-sshd)
 
-Ansible role to manage sshd on Debian/Ubuntu servers.
+Ansible role to manage sshd on Debian/Ubuntu systems.
 
 ## Installation
 
