@@ -12,8 +12,6 @@ galaxy_info:
         - buster
     - name: Ubuntu
       versions:
-        - precise
-        - trusty
         - xenial
         - bionic
   galaxy_tags:
