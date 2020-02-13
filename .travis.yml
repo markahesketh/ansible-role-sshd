@@ -4,6 +4,7 @@ services: docker
 
 env:
   global:
+    - ROLE_NAMESPACE: markahesketh
     - ROLE_NAME: sshd
   matrix:
     - MOLECULE_DISTRO: debian8
@@ -19,8 +20,8 @@ install:
 before_script:
   # Use actual Ansible Galaxy role name for the project directory.
   - cd ../
-  - mv ansible-role-$ROLE_NAME markahesketh.$ROLE_NAME
-  - cd markahesketh.$ROLE_NAME
+  - mv ansible-role-$ROLE_NAME $ROLE_NAMESPACE.$ROLE_NAME
+  - cd $ROLE_NAMESPACE.$ROLE_NAME
 
 script:
   # Run tests.
