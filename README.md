@@ -1,6 +1,8 @@
 # Ansible Role: sshd
 
-Ansible role to manage sshd.
+[![Build Status](https://travis-ci.org/markahesketh/ansible-role-sshd.svg?branch=master)](https://travis-ci.org/markahesketh/ansible-role-sshd)
+
+Ansible role to manage sshd on Debian/Ubuntu servers.
 
 ## Installation
 
@@ -25,7 +27,4 @@ This role is open-sourced software licensed under the [MIT license](http://opens
 
 By [Mark Hesketh](https://www.markhesketh.co.uk/), a web developer from Manchester, UK.
 
-* Blog: [markhesketh.co.uk](https://www.markhesketh.co.uk/)
-* Twitter: [twitter.com/markahesketh](https://www.twitter.com/markahesketh/)
-* GitHub: [github.com/markahesketh](http://www.github.com/heskethm/)
-* Email: [contact@markhesketh.co.uk](mailto:contact@markhesketh.co.uk)
+[Web](https://www.markhesketh.co.uk/) | [Twitter](https://www.twitter.com/markahesketh/) | [Github](http://www.github.com/heskethm/)

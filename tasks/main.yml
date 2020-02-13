@@ -1,5 +1,19 @@
 ---
 
+- name: Ensure SSH present
+  apt:
+    pkg: "ssh"
+    state: present
+    update_cache: yes
+
+- name: Enable password authentication
+  lineinfile:
+    dest: "/etc/ssh/sshd_config"
+    regexp: "^PasswordAuthentication"
+    line: "PasswordAuthentication yes"
+  when: sshd_password_authentication
+  notify: restart ssh
+
 - name: Enable password authentication
   lineinfile:
     dest: "/etc/ssh/sshd_config"
